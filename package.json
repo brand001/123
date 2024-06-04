@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios",213
     "ios:dev": "react-native run-ios --simulator='iPhone 15 Pro'",
-    "start": "react-native start",
+    "start": "react-native start",123
     "test": "jest",
-    "lint": "eslint .",
-    "postinstall": "patch-package"
+    "lint": "eslint .",123
+    "postinstall": "patch-package"123
   },
   "dependencies": {
     "@gpsgate/react-native-eventsource": "git+https://github.com/a0921313520/react-native-eventsource.git",
