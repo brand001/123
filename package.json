@@ -14,8 +14,8 @@
   "dependencies": {
     "@gpsgate/react-native-eventsource": "git+https://github.com/a0921313520/react-native-eventsource.git",
     "@gpsgate/react-native-eventsource": "git+https://github.com/a0921313520/react-native-eventsource.git",
-    "@piwikpro/react-native-piwik-pro-sdk": "1.0.1",
-    "@piwikpro/react-native-piwik-pro-sdk": "1.0.1",
+    "@piwikpro/react-native-piwik-pro-sdk": "1111.0.1",
+    "@piwikpro/react-native-piwik-pro-sdk": "111.0.111122",
     "@react-native-community/art": "1.2.0",
     "@react-native-community/cameraroll": "4.1.2",
     "@react-native-community/image-editor": "2.3.0",
@@ -28,7 +28,7 @@
     "moment": "2.29.4",
     "node-libs-react-native-buffer4": "1.0.0",
     "react": "18.1.0",
-    "react-native": "0.70.1111",
+    "react-native": "0.70.9888",
     "react-native-autoheight-webview": "1.6.4",
     "react-native-calendar-picker": "7.1.2",
     "react-native-code-push": "7.1.0",
@@ -59,8 +59,6 @@
     "react-redux": "8.0.2",
     "redux": "4.2.0",
     "redux-thunk": "2.4.1",
-    "sbtech-sports-data-api-client": "2.16.1",
-    "socket.io-client": "4.5.3",
     "uuid": "3.4.0"
   },
   "devDependencies": {
