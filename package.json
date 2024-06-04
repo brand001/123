@@ -56,8 +56,6 @@
     "react-redux": "8.0.2",
     "redux": "4.2.0",
     "redux-thunk": "2.4.1",
-    "sbtech-sports-data-api-client": "2.16.1",
-    "socket.io-client": "4.5.3",
     "uuid": "3.4.0"
   },
   "devDependencies": {
