@@ -75,6 +75,12 @@ PODS:
   - glog (0.3.5)
   - hermes-engine (0.70.8)
   - libevent (2.1.12)
+  - NevisMobileAuthentication (3.5.2)
+  - NevisMobileAuthentication-Debug (3.5.2)
+  - NevisMobileAuthenticationSdkReact (3.5.1):
+    - NevisMobileAuthentication (~> 3.5.0)
+    - NevisMobileAuthentication-Debug (~> 3.5.0)
+    - React-Core
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
     - boost
@@ -402,6 +408,9 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
+  - NevisMobileAuthentication
+  - NevisMobileAuthentication-Debug
+  - "NevisMobileAuthenticationSdkReact (from `../node_modules/@nevis-security/nevis-mobile-authentication-sdk-react`)"
   - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -448,6 +457,8 @@ SPEC REPOS:
     - FlipperKit
     - fmt
     - libevent
+    - NevisMobileAuthentication
+    - NevisMobileAuthentication-Debug
     - OpenSSL-Universal
     - SocketRocket
     - YogaKit
@@ -465,6 +476,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes/hermes-engine.podspec"
+  NevisMobileAuthenticationSdkReact:
+    :path: "../node_modules/@nevis-security/nevis-mobile-authentication-sdk-react"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -541,6 +554,9 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 0b19f33a9c2ec1dbdede3232606eeb1101db4cec
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  NevisMobileAuthentication: e25b79acaf2654d044799a9fe8d30c7fd12cda8e
+  NevisMobileAuthentication-Debug: 084b481217a3680a5a0f9af744ab0cc637aa4b32
+  NevisMobileAuthenticationSdkReact: 364c1e71a995e7ee28d9333c613201c5ef8f460e
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: 35a7977a5a3cb2d3830c3fef7352b7b116115829
@@ -573,6 +589,6 @@ SPEC CHECKSUMS:
   Yoga: d6133108734e69e8c0becc6ba587294b94829687
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 88c3f68083bbe2b7956410583b36498d912abd7b
+PODFILE CHECKSUM: 14a8c0efbd02e5b60214d7410611d99f1556c812
 
 COCOAPODS: 1.12.0
