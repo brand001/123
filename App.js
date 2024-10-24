@@ -71,6 +71,10 @@ asdas = () => {
 		console.log('sss')
 	}
 
+	asd = () => {
+		console.log('版本3')
+	}
+
 	render() {
 
 		return (
