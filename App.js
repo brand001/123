@@ -19,6 +19,10 @@ class App extends Component {
 		console.log('s')
 	}
 
+	asd = () => {
+		console.log('sss')
+	}
+
 	render() {
 
 		return (
