@@ -64,7 +64,9 @@ const App: () => Node = () => {
 	componentDidMount() {
 
 	}
-
+asdas = () => {
+	console.log('ssss')
+}
 	asd = () => {
 		console.log('sss')
 	}
