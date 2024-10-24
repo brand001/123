@@ -62,7 +62,7 @@ const App: () => Node = () => {
   };
 
 	componentDidMount() {
-		console.log('s')
+
 	}
 
 	asd = () => {
