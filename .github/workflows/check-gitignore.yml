@@ -1,0 +1,23 @@
+name: Restrict .gitignore Edits
+
+on: [pull_request]
+
+jobs:
+  check-gitignore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Check for unauthorized .gitignore changes
+        run: |
+          FILES_CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          echo "Changed files: $FILES_CHANGED"
+          if echo "$FILES_CHANGED" | grep -q "^.gitignore$"; then
+            AUTHOR="${{ github.event.pull_request.user.login }}"
+            if [[ "$AUTHOR" != "AAC" && "$AUTHOR" != "BBC" ]]; then
+              echo "❌ $AUTHOR 不允许修改 .gitignore"
+              exit 1
+            fi
+          fi
+
