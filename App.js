@@ -61,28 +61,12 @@ const App: () => Node = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-	componentDidMount() {
-
-	}
-asdas = () => {
-	console.log('ssss')
-}
-	asd = () => {
-		console.log('sss')
-	}
-
-	asd = () => {
-		console.log('版本3')
-	}
-
-	render() {
-
-		return (
-			<View style={styles.tests}>
-				<Text>test</Text>
-			</View>
-		);
-	}
+  return (
+    <View style={styles.tests}>
+      <Text>test</Text>
+      <Text>谁谁谁</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
