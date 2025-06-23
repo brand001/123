@@ -65,3 +65,4 @@ buck-out/
 /index.android.bundle
 /index.android.bundle.map
 /main.jsbundle.map
+.DS_Store
