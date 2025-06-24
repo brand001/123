@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -61,29 +61,55 @@ const App: () => Node = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-	componentDidMount() {
+  useEffect(() => {
+    // Component did mount logic here
+    console.log('App mounted');
+  }, []);
 
-	}
-asdas = () => {
-	console.log('ssss')
-}
-	asd = () => {
-		console.log('sss')
-	}
+  const handleTest = () => {
+    console.log('Test function called');
+  };
 
-	asd = () => {
-		console.log('版本3')
-	}
-
-	render() {
+  const handleVersion = () => {
+    console.log('版本3');
+  };
 
 		return (
+    <SafeAreaView style={backgroundStyle}>
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={backgroundStyle.backgroundColor}
+      />
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        style={backgroundStyle}>
+        <Header />
+        <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+          }}>
+          <Section title="Step One">
+            Edit <Text style={styles.highlight}>App.js</Text> to change this
+            screen and then come back to see your edits.
+          </Section>
+          <Section title="See Your Changes">
+            <ReloadInstructions />
+          </Section>
+          <Section title="Debug">
+            <DebugInstructions />
+          </Section>
+          <Section title="Learn More">
+            Read the docs to discover what to do next:
+          </Section>
+          <LearnMoreLinks />
 			<View style={styles.tests}>
-				<Text>test</Text>
+            <Text>Test Component</Text>
 			</View>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
 		);
-	}
-}
+};
 
 const styles = StyleSheet.create({
   sectionContainer: {
@@ -101,6 +127,10 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  tests: {
+    padding: 20,
+    alignItems: 'center',
   },
 });
 
