@@ -1,3 +1,10 @@
 {
-  "common": { "ok": "OK", "cancel": "Hủy" }
+    "common": {
+        "ok": "OK",
+        "cancel": "Hủy"
+    },
+    "auth": {
+        "login": "Đăng nhập",
+        "welcome": "Chào mừng, {{name}}"
+    }
 }
